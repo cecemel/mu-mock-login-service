@@ -1,6 +1,10 @@
 # mu-mock-login-service
 Service to login into a mu-app.
-It links a mu:session to a foaf:OnlineAccount.
+
+It manages the triple:
+```
+  mu:sessionUri session:account foaf:onlineAccountUri
+```
 
 ## API
 ### Login
