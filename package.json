@@ -1,6 +1,6 @@
 {
   "name": "mu-mock-login-service",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Microservice to mock-login into mu-app: it links a session to an account.",
   "dependencies": {
     "@lblod/mu-auth-sudo": "^0.2.0"
