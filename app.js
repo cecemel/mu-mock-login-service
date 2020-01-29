@@ -36,7 +36,7 @@ app.post('/sessions', async function( req, res, next ) {
   try {
     accountId = req.body['data']['relationships']['account']['data']['id'];
   } catch(e){
-    console.error(`Error parsing accountId ${JSON.stringfy(accountId)}`);
+    console.error(`Error parsing accountId ${JSON.stringify(accountId)}`);
   }
   if(!accountId) return error(res, `Issues retreiving id from ${req.body}`);
 
