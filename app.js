@@ -91,7 +91,7 @@ app.delete('/sessions/current', async function(req, res, next) {
 
     await removeOldSessions(sessionUri);
 
-    return res.status(204).end();
+    return res.header('mu-auth-allowed-groups', 'CLEAR').status(204).end();
   } catch(e) {
     return next(new Error(e.message));
   }
