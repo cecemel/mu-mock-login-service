@@ -49,7 +49,7 @@ app.post('/sessions', async function( req, res, next ) {
 
     const { _, sessionId } = await insertNewSessionForAccount(constAccountData.accountUri, sessionUri);
 
-    return res.status(201).send({
+    return res.header('mu-auth-allowed-groups', 'CLEAR').status(201).send({
         links: {
           self: '/sessions/current'
         },
